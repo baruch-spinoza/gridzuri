@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+    }
+    .container{
+        margin: 20px;
+    }
+    .row{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .card1{
+        background: #03029f;
+        position: relative;
+        flex:1;
+        max-width: 300px;
+        height: 150px;
+        margin:10px;
+    }
+    .card2{
+        background: #030;
+        position: relative;
+        flex:1;
+        max-width: 460px;
+        height: 200px;
+        margin:10px;
+    }
+    .card3{
+        background: rgb(51, 0, 3);
+        position: relative;
+        flex:1;
+        max-width: 940px;
+        height: 300px;
+        margin:10px;
+    }
+    @media (max-width:800px){
+        .card1{
+            flex: 100%;
+            max-width: 600px;
+        }
+        .card2{
+            flex: 100%;
+            max-width: 600px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="card1"></div>
+            <div class="card1"></div>
+            <div class="card1"></div>
+        </div>
+        <div class="row">
+            <div class="card2"></div>
+            <div class="card2"></div>           
+        </div>
+        <div class="row">
+            <div class="card3"></div>
+        </div>
+    </div>
+
+</body>
+</html>
